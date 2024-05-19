@@ -21,7 +21,6 @@ const App = () => {
           <Route path="/home" element={<Home/>} />
           <Route path="/java" element={<JavaProjects/>}/>
           <Route path="/nodejs" element={<NodeJS/>}/>
-          <Route path="/windows" element={<Windows/>}/>
           <Route path="/cybersecurity" element={<Cybersecurity/>}/>
           <Route path="/database" element={<DataBase/>}/>
           <Route path="/linux" element={<Linux/>}/>
