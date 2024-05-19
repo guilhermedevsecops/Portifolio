@@ -1,0 +1,25 @@
+.footer{
+    margin-left:1vw;
+    color:green;
+    
+    text-align: center;
+    
+    .icons{
+        margin-top:10px;
+        color: #fff;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        font-size: 2rem;
+        justify-items: center;
+        span{
+            cursor: pointer;
+            margin-left:10px;
+        }
+        a{
+            color: white;
+        }
+    }
+
+
+}
