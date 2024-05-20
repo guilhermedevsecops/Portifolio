@@ -14,7 +14,7 @@ const Footer = () => {
           <NavLink to="https://github.com/guilhermedevsecops"><span><FaGithub/></span></NavLink>
         </div>
         <div>
-            <span>Development by &copy; guilhermedevsec</span>
+            <span>Development<br/>&copy; guilhermedevsec</span>
         </div>
       </div>
       <div>

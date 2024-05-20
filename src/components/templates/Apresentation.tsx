@@ -1,35 +1,42 @@
 import React from 'react'
 import style from '../styles/scss/Apresentation.module.scss'
-
+import authorImage from '../assets/author.jpg';
 const Apresentation = () => {
     return (
         <div className={style.containerApresentation}>
             <div className={style.title}>
                 <h1>Bem Vindo ao Meu Web-Site</h1>
             </div>
-            <div>
-                <p>Olá meu nome é Guilherme, seja bem vindo ao meu website!</p>
-                
-                <p>Este é um espaço onde irei postar meus recentes trabalhos e aprendizados ao longo da carreira </p>
-                   <p>Espero que Gostem.</p>
+            <div className={style.container}>
+                <div className={style.image}>
+                    <img src={authorImage} />
+                </div>
+                <div className={style.description}>
+                    <p>Olá meu nome é Guilherme, seja bem vindo ao meu website!</p>
+
+                    <p>Este é um espaço onde irei postar meus recentes trabalhos e aprendizados ao longo da carreira.</p>
+                    <p>Espero que gostem.</p>
+                </div>
+
             </div>
-            
-            <div>
+
+            <div className={style.aboutText}>
                 <h2>Sobre</h2>
-                <hr/>
-                
-                <p>Sou tecnologo em Analise e Desenvolvimento de Sistemas, com pós graduação em Cybersegurança e MBA de Banco de Dados, Atualmente estou completando minha 3° Pós-Graduaçaão como Arquiteto de software com enfase em Java, o que posso dizer e que quanto mais estudo na aréa da Tecnologia mais sinto gosto pelo aprendizado fazendo assim com que eu busque cada dia mais conhecimentos relacionados a área</p>
-                
-                <p>Possuo experiência na aréa de Desenvolvimento efetuando criação de chatboots em linguagem NodeJS, Microserviços em Java, orquestração de containers em Docker, projetos em Springboot, além de possuir habilidades de Desenvolvimento FrontEnd utilizando Reacjs.</p>
-                
-                <p>Possuo conhecimento em monitoramento de SOC utilizando Zabbix onde efetuei diversas automações para integração com outros sistemas, Grafana e Prometheus, além de conhecimento no serviço de mensageria RABBITMQ, efetuando criação de automatizações e criações de microserviços com o fim de uma rapida resposta a incidentes, além disso tenho conhecimento de administração de Firewalls SonicWall, Fortigate e PFSense, alem dos pontos apresentados também possuo conhecimento em EPO´s MacAffe e Trellix.</p>
-                
-                <p>Para finaliza também tenho conhecimentos tanto na administração quanto criação de rotinas em Banco de dados, além disso possuo o conhecimento de gerar automatizações de ETL, e efetuando Manutenção e Criação de Querys complexas de Consultas.</p>
             </div>
-            <div>
+            <div className={style.about}>
+                <p>Sou tecnólogo em Análise e Desenvolvimento de Sistemas, com pós-graduação em Cibersegurança e MBA em Banco de Dados. Atualmente, estou concluindo minha terceira pós-graduação, desta vez em Arquitetura de Software com ênfase em Java. Quanto mais estudo na área de Tecnologia, mais me apaixono pelo aprendizado, o que me motiva a buscar continuamente novos conhecimentos.</p>
+
+                <p>Tenho experiência em Desenvolvimento, participando de projetos de criações de chatbots em NodeJS, microserviços em Java, orquestração de containers com Docker e projetos utilizando Spring Boot. Também possuo habilidades no Desenvolvimento Front-end utilizando o framework ReactJS.</p>
+
+                <p>Possuo conhecimentos em monitoramento de SOC utilizando Zabbix, onde realizei diversas automações para integração com outros sistemas, além de Grafana e Prometheus. Tenho experiência com serviços de mensageria como RabbitMQ, criando automações e microserviços para uma resposta rápida a incidentes. Além disso, tenho expertise na administração de firewalls como SonicWall, Fortigate e PFSense, e em EPOs da McAfee e Trellix.</p>
+
+                <p>Para finalizar, possuo habilidades em administração e criação de rotinas em bancos de dados, além de gerar automações de ETL e realizar a manutenção e criação de querys complexas.</p>
+
                 <p>Clique em um dos temas ao lado e conheça meus projetos.</p>
+            
             </div>
             
+
         </div >
     )
 }

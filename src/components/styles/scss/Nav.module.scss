@@ -1,15 +1,13 @@
-.sideNav {
-        
+.sideNav {        
     ul {
-        
-        align-items: center;
-        justify-content: center;
+        text-align: right;
+        align-items: right;
         li {
             display:flex;
             flex-direction: row;
             color: white;
             list-style-type: none;
-            margin-left: 5vw;
+            margin-left: 2vw;
             margin-top:1.5vw;
             width: 150px;    
             font-size: 1.2rem;
