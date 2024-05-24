@@ -1,5 +1,5 @@
-.containerApresentation{
-    .container{
+.containerApresentation {
+    .container {
         display: flex;
         flex-direction: row-reverse;
         flex-wrap: wrap;
@@ -7,58 +7,90 @@
         justify-content: space-around;
         width: 90%;
         margin-left: 2vw;
-        .image{
-            img{
-                border-radius: 100%;
 
+        .image {
+            img {
+                border-radius: 100%;
             }
         }
-        
-        .description{
+
+        .description {
             width: 55vw;
-            
         }
     }
-    .aboutText{
-        h2{
+
+    .aboutText {
+        h2 {
             font-weight: bolder;
             width: 90%;
             margin-left: 4vw;
-            
         }
-
-        
     }
 
-    
-    .about{
+    .about {
         width: 90%;
         margin-left: 4vw;
         text-align: justify;
-        p{
-            margin-top: 1
+
+        p {
+            margin-top: 1rem;
         }
-
-
     }
-    .title{
+
+    .title {
         text-align: center;
         margin-top: 2rem;
-        margin-bottom:2rem;
+        margin-bottom: 2rem;
     }
 
-    h2{
-        margin-top:1rem;
-        margin-bottom:1rem;
+    h2 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
-    p{
-        margin-top:1rem;
+    p {
+        margin-top: 1rem;
     }
 
+    // Media query for mobile devices
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+            width: 100vw;
+            margin-left: 0;
+
+            .description {
+                width: 90%;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .image {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 1rem;
+
+                img {
+                    width: 50%; // Adjust the image size for mobile
+                    height: auto;
+                }
+            }
+        }
+
+        .aboutText {
+            h2 {
+                width: 100%;
+                margin-left: 0;
+                text-align: center;
+            }
+        }
+
+        .about {
+            width: 95%;
+            margin-left: 0;
+            text-align: left;
+            padding: 0 1rem;
+        }
+    }
 }
-
-
-
-
-

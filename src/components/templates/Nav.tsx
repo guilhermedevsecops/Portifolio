@@ -1,21 +1,41 @@
 import React, { useState } from 'react'
 import style from '../styles/scss/Nav.module.scss'
 import { GiCoffeeCup } from "react-icons/gi";
-import { FaDocker } from "react-icons/fa";
-import { FaDatabase } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa";
+import { FaDatabase, FaNodeJs, FaWindows, FaLinux, FaDocker } from "react-icons/fa";
 import { MdOutlineSecurity } from "react-icons/md";
-import { FaWindows } from "react-icons/fa";
-import { FaLinux } from "react-icons/fa";
+import { IoMenu, IoClose } from 'react-icons/io5';
 import { useChangePage } from '../../config/hooks/useChangePage';
 import { NavLink } from 'react-router-dom';
 import { IoHome } from "react-icons/io5";
 
-export const Nav = () => {
+
+export const MobilleNav = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
-    <div>Nav</div>
-  )
-}
+    <div>
+        <button className={style.hamburger} onClick={toggleMenu}>
+          {isOpen ? <IoClose /> : <IoMenu />}
+        </button>
+      <div className={`${style.mobille} ${isOpen ? style.open : ''}`}>
+        <ul>
+          <NavLink to="/home" onClick={closeMenu}><li id="home" value="home"><span><IoHome /></span><p>Home</p></li></NavLink>
+          <NavLink to="/java" onClick={closeMenu}><li id="java" value="java"><span><GiCoffeeCup /></span><p>Java</p></li></NavLink>
+          <NavLink to="/python" onClick={closeMenu}><li id="python" value="python"><span><FaDatabase /></span><p>Python</p></li></NavLink>
+          <NavLink to="/nodejs" onClick={closeMenu}><li id="nodejs" value="nodejs"><span><FaNodeJs /></span><p>JavaScript</p></li></NavLink>
+        </ul>
+      </div>
+    </div>
+  );
+};
 
 export const SideNav = () => {
   

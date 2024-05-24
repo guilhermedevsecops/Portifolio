@@ -5,7 +5,7 @@ const Apresentation = () => {
     return (
         <div className={style.containerApresentation}>
             <div className={style.title}>
-                <h1>Bem Vindo ao Meu Web-Site</h1>
+                <h1>Bem Vindo ao Meu Site</h1>
             </div>
             <div className={style.container}>
                 <div className={style.image}>

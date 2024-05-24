@@ -7,7 +7,7 @@
             flex-direction: row;
             color: white;
             list-style-type: none;
-            margin-left: 2vw;
+            margin-left: 0.5vw;
             margin-top:1.5vw;
             width: 150px;    
             font-size: 1.2rem;
@@ -32,3 +32,71 @@
     background: green;
     color: white;
 }
+
+
+/* Nav.module.scss */
+.mobille {
+    display: none; /* Oculto por padrão */
+    flex-direction: column;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+  }
+  
+  .mobille.open {
+    display: flex;
+    transform: translateX(0);
+  }
+  
+  .hamburger {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    font-size: 40px;
+    color: #fff;
+    z-index: 20;
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  ul a{
+    text-decoration: none;
+  }
+  
+  li {
+    padding-top:20px;
+    width: 100px;
+    flex-direction: column;
+    text-align: left;
+    color: #fff;
+  }
+  
+  li span {
+    margin-right: 10px;
+  }
+
+  li a{
+    text-decoration: none;
+  }
+  
+  li p {
+    display: inline;
+  }
+  

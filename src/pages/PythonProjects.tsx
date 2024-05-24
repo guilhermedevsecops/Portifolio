@@ -27,23 +27,36 @@ const PythonProjects = () => {
     setCurrentIndex(index);
   };
 
+  const prevSlide = () => {
+    setCurrentIndex(currentIndex === 0 ? images.length - 1 : currentIndex - 1);
+  };
+
+  const nextSlide = () => {
+    setCurrentIndex(currentIndex === images.length - 1 ? 0 : currentIndex + 1);
+  };
+
   return (
     <div className={style.containerDiv}>
       <div>
         <h1>Java</h1>
       </div>
+      <div className={style.geral}>
       <div className={style.container}>
-        <div>
-          <Carrosel images={images} onChange={handleCarouselChange} />
+        <div className={style.carrousel}>
+          <img className={style.image} src={images[currentIndex].src} alt={`Image ${currentIndex + 1}`} />
+          <div className={style.button}>
+            <button className={style.btn1} onClick={prevSlide}>Anterior</button>
+            <button onClick={nextSlide}>Próximo</button>
+        </div>
         </div>
         <div className={style.texts}>
           <h2>{python[currentIndex].title}</h2>
           <p>{python[currentIndex].texto}</p>
           <p>Caso esteja interessado no código, visite meu GitHub clicando no ícone ou no link abaixo:</p>
-          <span><NavLink to="https://github.com/guilhermedevsecops">https://github.com/guilhermedevsecops</NavLink></span>
-          <span><NavLink to="https://github.com/guilhermedevsecops"><ButtonGitHub /></NavLink></span>
+          <span className={style.links}><NavLink to="https://github.com/guilhermedevsecops">https://github.com/guilhermedevsecops</NavLink></span>
         </div>
       </div>
+    </div>
     </div>
   );
 }
