@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Carrosel from '../components/fragments/Carrosel';
 import { NavLink } from 'react-router-dom';
 import img from '../components/assets/cronometro.png';
 import img2 from '../components/assets/SecretWord.png';
