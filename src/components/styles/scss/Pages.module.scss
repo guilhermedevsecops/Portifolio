@@ -25,10 +25,16 @@
 
 .texts{
     margin-left: 2vw;
+    text-decoration: none;
     .links{
-        color: white;
+        p{
+            margin-top: 10px;
+            color: red;
+        }
+
     }
-}
+    }
+
 
 .button {
     align-items: center;

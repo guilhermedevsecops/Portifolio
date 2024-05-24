@@ -61,7 +61,7 @@ const JavaProjects: React.FC = () => {
           <h2>{javaTitle[currentIndex].title}</h2>
           <p>{javaTitle[currentIndex].texto}</p>
           <p>Caso esteja interessado no código, visite meu GitHub clicando no ícone ou no link abaixo:</p>
-          <span className={style.links}><NavLink to="https://github.com/guilhermedevsecops">https://github.com/guilhermedevsecops</NavLink></span>
+          <p className={style.links}><NavLink to="https://github.com/guilhermedevsecops"><p>https://github.com/guilhermedevsecops</p></NavLink></p>
         </div>
       </div>
     </div>
