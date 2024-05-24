@@ -37,7 +37,7 @@ const PythonProjects = () => {
   return (
     <div className={style.containerDiv}>
       <div>
-        <h1>Java</h1>
+        <h1>Python</h1>
       </div>
       <div className={style.geral}>
       <div className={style.container}>
