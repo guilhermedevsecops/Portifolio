@@ -45,7 +45,7 @@ const NodeJS: React.FC = () => {
   return (
     <div className={style.containerDiv}>
       <div>
-        <h1>NodeJS</h1>
+        <h1>JavaScript</h1>
       </div>
       <div className={style.geral}>
       <div className={style.container}>
